@@ -12,9 +12,9 @@ namespace VIN_LIB
     {
         public bool CheckVIN (string[] vin)
         {
-            string s = "vvvv";
+            string number = Console.ReadLine();
             Regex regex = new Regex(@"\d{3}-\d{3}-\d{4}");
-            if (regex != )
+            if (!Regex.IsMatch(number, GetIgnoreCase()))
             {
                 Console.WriteLine("Истина");
             }
@@ -24,6 +24,10 @@ namespace VIN_LIB
             }
         }
 
-        
+        private static RegexOptions GetIgnoreCase()
+        {
+            return RegexOptions.IgnoreCase;
+        }
+        public  
     }
 }
