@@ -14,20 +14,24 @@ namespace VIN_LIB
         {
             string number = Console.ReadLine();
             Regex regex = new Regex(@"\d{3}-\d{3}-\d{4}");
-            if (!Regex.IsMatch(number, GetIgnoreCase()))
+            if (!Regex.IsMatch(number, ))
+                if (number != Regex() )
             {
-                Console.WriteLine("Истина");
+                return true;
             }
             else
             {
-                Console.WriteLine("Ложь");
+                return false;
             }
+        } 
+        public string GetVINCountry(string[] vin)
+        {
+
         }
 
-        private static RegexOptions GetIgnoreCase()
+        public int GetTransportYear (string[] vin)
         {
-            return RegexOptions.IgnoreCase;
+
         }
-        public  
     }
 }
