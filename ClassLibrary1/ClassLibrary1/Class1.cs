@@ -15,23 +15,10 @@ namespace VIN_LIB
             string number = Console.ReadLine();
             Regex regex = new Regex(@"\d{3}-\d{3}-\d{4}");
             if (!Regex.IsMatch(number, ))
-                if (number != Regex() )
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+                if (number = regex(@"\d{A-H}"))
+                {
+                }
         } 
-        public string GetVINCountry(string[] vin)
-        {
 
-        }
-
-        public int GetTransportYear (string[] vin)
-        {
-
-        }
     }
 }
